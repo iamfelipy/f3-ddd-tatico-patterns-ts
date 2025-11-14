@@ -1,0 +1,17 @@
+{
+  "jsc" : {
+    //Na comunicação técnica, parser lê e entende, transform modifica e gera o que será executado ou emitido.
+    // Parser vem de "parse" (analisar) — significa analisar e entender o código fonte, transformando texto em estruturas (AST).
+    "parser": {
+      "syntax": "typescript",
+      "decorators": true
+    },
+      // Transform vem de "transformar" — significa modificar a estrutura já entendida para gerar novo código, adaptar sintaxe, adicionar recursos, etc.
+      "transform": {
+        // "legacyDecorator": true ativa o suporte ao padrão antigo de decorators do TypeScript, compatível com a especificação anterior do ECMAScript.
+        "legacyDecorator": true,
+        //"decoratorMetadata": true adiciona metadados extras (usando reflect-metadata) nos decorators, permitindo que frameworks leiam tipos/reflexão em tempo de execução.
+        "decoratorMetadata": true
+      }
+  }
+}
