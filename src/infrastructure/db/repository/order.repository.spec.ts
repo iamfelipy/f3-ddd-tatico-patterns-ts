@@ -188,4 +188,49 @@ describe("Order repository test", () => {
     });
 
   });
+  it("find a order", async () => {
+    // Arrange
+    const customerRepository = new CustomerRepository();
+    const customer = new Customer("123", "Customer 1");
+    const address = new Address("Street 1", 1, "Zipcode 1", "City 1");
+    customer.changeAddress(address);
+    await customerRepository.create(customer);
+
+    const productRepository = new ProductRepository();
+    const product = new Product("123", "Product 1", 10);
+    await productRepository.create(product);
+
+    const orderItem = new OrderItem(
+      "1",
+      product.name,
+      product.price,
+      product.id,
+      2
+    );
+    const order = new Order("123", "123", [orderItem]);
+    const orderRepository = new OrderRepository();
+    await orderRepository.create(order);
+
+    // Act
+    const foundOrder = await orderRepository.find(order.id);
+
+    // Assert
+    expect(foundOrder).toBeInstanceOf(Order);
+    expect(foundOrder.id).toBe(order.id);
+    expect(foundOrder.customerId).toBe(order.customerId);
+    expect(foundOrder.total()).toBe(order.total());
+    expect(foundOrder.items.length).toBe(order.items.length);
+
+    expect(foundOrder.items).toEqual(
+      expect.arrayContaining([
+        expect.objectContaining({
+          id: orderItem.id,
+          name: orderItem.name,
+          price: orderItem.price,
+          productId: orderItem.productId,
+          quantity: orderItem.quantity,
+        }),
+      ])
+    );
+  });
 });
