@@ -1,6 +1,25 @@
 # DDD - Domain Driven Design
 
-O domínio deste projeto está relacionado à gestão de pedidos em um sistema de e-commerce. Ele abrange funcionalidades como cadastro de clientes, produtos, pedidos. O foco está em garantir a integridade das regras de negócio, como políticas, validação estoque e atualizações.
+O domínio deste projeto está relacionado à gestão de pedidos em um sistema de e-commerce. Ele abrange funcionalidades como cadastro de clientes, produtos e pedidos. O foco está em garantir a integridade das regras de negócio, como políticas, validação e atualizações.
+
+## Como rodar o projeto
+
+1. **Instale o Node.js**  
+   Baixe e instale a versão **22.15.0** do Node.js.
+
+2. **Instale as dependências**  
+   No diretório do projeto, execute:
+   ```
+   npm install
+   ```
+
+3. **Execute os testes**  
+   Para rodar toda a suíte de testes:
+   ```
+   npm run test
+   ```
+
+---
 
 ## Camadas e Conceitos Utilizados
 
