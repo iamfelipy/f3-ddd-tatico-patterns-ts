@@ -6,7 +6,7 @@ export default class EventDispatcher implements EventDispatcherInterface {
   private static instance: EventDispatcher;
   private eventHandlers: { [eventName: string]: EventHandlerInterface[] } = {};
 
-  private constructor() {}
+  constructor() {}
 
   static getInstance(): EventDispatcher {
     if (!EventDispatcher.instance) {
