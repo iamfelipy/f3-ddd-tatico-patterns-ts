@@ -19,6 +19,11 @@ O domínio deste projeto está relacionado à gestão de pedidos em um sistema d
    npm run test
    ```
 
+   Para rodar os testes de um arquivo específico, por exemplo, os testes dos handlers de `register-user-`, use:
+   ```
+   npm run test -- --testPathPattern=register-user-
+   ```
+
 ---
 
 ## Camadas e Conceitos Utilizados
