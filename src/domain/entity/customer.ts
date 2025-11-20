@@ -1,4 +1,5 @@
 import EventDispatcher from "../event/@shared/event/event-dispatcher";
+import { CustomerAddressChanged } from "../event/customer/customer-address-changed.event";
 import CustomerCreatedEvent from "../event/customer/customer-created.event";
 import Address from "./address";
 
@@ -37,6 +38,9 @@ export default class Customer {
   
   changeAddress(address: Address) {
     this._address = address;
+
+    const customerAddressChangedEvent = new CustomerAddressChanged(this);
+    EventDispatcher.getInstance().notify(customerAddressChangedEvent);
   }
 
   validate() {
