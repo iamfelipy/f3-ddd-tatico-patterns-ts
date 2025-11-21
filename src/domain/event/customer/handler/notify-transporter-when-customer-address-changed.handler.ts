@@ -6,7 +6,7 @@ export default class NotifyTransporterWhenCustomerAddressChangedHandler
   handle(event: CustomerAddressChanged): void {
     const customer = event.eventData;
     console.log(
-      `Notificando transportadora: endereço do cliente ${customer.id} foi alterado para ${customer.Address.toString()}`
+      `Endereço do cliente: ${customer.id}, ${customer.name} alterado para: ${customer.Address.toString()}`
     );
   }
 }
