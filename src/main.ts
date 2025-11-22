@@ -1,7 +1,7 @@
-import Customer from "./domain/entity/customer";
-import Address from "./domain/entity/address";
-import OrderItem from "./domain/entity/order_item";
-import Order from "./domain/entity/order";
+import Order from "./domain/checkout/entity/order";
+import OrderItem from "./domain/checkout/entity/order_item";
+import Customer from "./domain/customer/entitty/customer";
+import Address from "./domain/customer/value-object/address";
 
 // Agregado com relação de id
 let customer = new Customer("123", "Felipy C")
