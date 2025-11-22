@@ -1,6 +1,6 @@
 # DDD - Domain Driven Design
 
-O domínio deste projeto está relacionado à gestão de pedidos em um sistema de e-commerce. Ele abrange funcionalidades como cadastro de clientes, produtos e pedidos. O foco está em garantir a integridade das regras de negócio, como políticas, validação e atualizações.
+Projeto utilizado para o aprendizado de DDD, modelando um domínio relacionado a e-commerce.
 
 ## Como rodar o projeto
 
