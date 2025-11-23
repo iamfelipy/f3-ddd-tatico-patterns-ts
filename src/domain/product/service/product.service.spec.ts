@@ -1,6 +1,6 @@
 // primeiro criamos o teste para entender como queremos o domain service, e depois fazemos a implementação
 
-import { Product } from "../entity/product";
+import Product from "../entity/product";
 import { ProductService } from "./product.service";
 
 describe("Product service unit tests", () => {
