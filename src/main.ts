@@ -1,6 +1,6 @@
 import Order from "./domain/checkout/entity/order";
 import OrderItem from "./domain/checkout/entity/order_item";
-import Customer from "./domain/customer/entitty/customer";
+import Customer from "./domain/customer/entity/customer";
 import Address from "./domain/customer/value-object/address";
 
 // Agregado com relação de id

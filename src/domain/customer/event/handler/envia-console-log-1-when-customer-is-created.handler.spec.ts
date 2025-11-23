@@ -1,5 +1,5 @@
 import EventDispatcher from "../../../@shared/event/event-dispatcher";
-import Customer from "../../entitty/customer";
+import Customer from "../../entity/customer";
 import EnviaConsoleLog1Handler from "./envia-console-log-1-when-customer-is-created.handler";
 
 describe("envia console log 1 when customer is created handler tests", () => {

@@ -1,5 +1,5 @@
 import Address from "../../value-object/address";
-import Customer from "../../entitty/customer";
+import Customer from "../../entity/customer";
 import NotifyTransporterWhenCustomerAddressChangedHandler from "./notify-transporter-when-customer-address-changed.handler";
 import EventDispatcher from "../../../@shared/event/event-dispatcher";
 

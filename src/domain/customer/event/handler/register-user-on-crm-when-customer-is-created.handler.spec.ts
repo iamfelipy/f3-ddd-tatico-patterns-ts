@@ -1,5 +1,5 @@
 import EventDispatcher from "../../../@shared/event/event-dispatcher";
-import Customer from "../../entitty/customer";
+import Customer from "../../entity/customer";
 import RegisterUserOnCrmWhenCustomerIsCreatedHandler from "./register-user-on-crm-when-customer-is-created.handler";
 
 describe("register user on crm when customer is created tests", () => {

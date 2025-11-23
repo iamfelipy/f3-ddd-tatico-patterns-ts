@@ -1,5 +1,5 @@
 import EventInterface from "../../@shared/event/event.interface";
-import Customer from "../entitty/customer";
+import Customer from "../entity/customer";
 
 export default class CustomerCreatedEvent implements EventInterface {
   dataTimeOccurred: Date;
